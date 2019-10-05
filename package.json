@@ -1,0 +1,32 @@
+{
+  "name": "@south-paw/typeface-minecraft",
+  "version": "1.0.0",
+  "description": "Minecraft typeface and colors",
+  "keywords": [
+    "typeface",
+    "font",
+    "font family",
+    "typography",
+    "minecraft",
+    "minecraft-font"
+  ],
+  "homepage": "https://github.com/South-Paw/typeface-minecraft",
+  "bugs": "https://github.com/South-Paw/typeface-minecraft/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Alex Gabites",
+    "email": "hello@southpaw.co.nz",
+    "url": "http://southpaw.co.nz/"
+  },
+  "files": [
+    "files/*"
+  ],
+  "main": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/South-Paw/typeface-minecraft.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

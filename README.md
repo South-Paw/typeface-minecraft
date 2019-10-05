@@ -1,25 +1,69 @@
-# Minecraft Webfont and Colors
+# typeface-minecraft
 
-A Minecraft webfont kit provided with base game colors as CSS classes.
+The CSS and web font files for the Minecraft typeface and colors
 
+## Install
 
-## How to use
+`npm install --save @south-paw/typeface-minecraft`
 
-To use this font, simply put the folders in the root directory of your project, and link the CSS as follows:
+or
 
-```html
-<link rel="stylesheet" type="text/css" media="screen" href="css/minecraft-webfont.css" />
+`yarn add @south-paw/typeface-minecraft`
+
+## Use
+
+This project assumes that you're using webpack to process CSS and files.
+
+The package includes the necessary font files (woff2, woff) and a CSS file with font-face declarations pointing at these files.
+
+You will need to have webpack setup to load css and font files.
+
+Many tools built with Webpack will work out of the box with this package such as [Gatsby](https://github.com/gatsbyjs/gatsby) and [Create React App](https://github.com/facebook/create-react-app).
+
+To use, simply require the package in your project's entry file:
+
+```js
+// Load Minecraft typeface
+require("@south-paw/typeface-minecraft");
 ```
 
-Then call the Minecraft font in your CSS with:
+and then apply the font family via CSS:
 
 ```css
-font-family: 'Minecraft';
+body {
+  font-family: "Minecraft";
+}
 ```
 
-Note: changing the `font-weight` will blur the font.
+The package also adds some global CSS classes for matching Minecraft colors:
 
+```css
+.minecraft-black
+.minecraft-dark-blue
+.minecraft-dark-green
+.minecraft-dark-aqua
+.minecraft-dark-red
+.minecraft-dark-purple
+.minecraft-gold
+.minecraft-gray
+.minecraft-dark-gray
+.minecraft-blue
+.minecraft-green
+.minecraft-aqua
+.minecraft-red
+.minecraft-light-purple
+.minecraft-yellow
+.minecraft-white
+```
 
-## Authors
+Any of these can be applied to an element e.g.
 
-Colors used in the CSS classes are from the [Minecraft wiki](http://minecraft.gamepedia.com/Formatting_codes).
+```html
+<div class="minecraft-blue">Minecraft</div>
+```
+
+## Source
+
+Colors are from the [Minecraft wiki](https://minecraft.gamepedia.com/Formatting_codes).
+
+Package is inspired by the [typefaces project](https://github.com/KyleAMathews/typefaces).
